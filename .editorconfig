@@ -1,0 +1,7 @@
+
+[*]
+indent_size = 2
+tab_width = 2
+ij_typescript_force_quote_style = true
+ij_javascript_use_double_quotes = false
+ij_javascript_align_multiline_parameters = false
