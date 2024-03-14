@@ -7,8 +7,15 @@ const localhost = `http://localhost:${port}`;
 const Vigenere = require('caesar-salad').Vigenere;
 const password = "LettersOnly";
 
+const styleCSS = (
+  "display: flex;" +
+  "flex-direction: column;" +
+  "justify-content: center;" +
+  " align-items: center;"
+)
+
 const createHtmlElement = (event, route) => {
-  return `<div>
+  return `<div style="${styleCSS}">
             <h1>${event}</h1>
             <button type="button">
               <a href="${localhost}/${route}/${event}">
