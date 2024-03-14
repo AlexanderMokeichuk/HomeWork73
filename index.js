@@ -26,11 +26,11 @@ const createHtmlElement = (event, route) => {
 };
 
 app.get('/', (req, res) => {
-  res.send("<h1>Hello, world!!</h1>");
+  res.send(`<h1 style="${styleCSS}">Hello, world!!</h1>`);
 });
 
 app.get('/:message', (req, res) => {
-  res.send(`<h1>Hello, ${req.params.message}!!</h1>`);
+  res.send(`<h1 style="${styleCSS}">Hello, ${req.params.message}!!</h1>`);
 });
 
 app.get('/encode/:route', (req, res) => {
